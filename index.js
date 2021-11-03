@@ -13,4 +13,17 @@ const operation = (num1, num2) => {
   ${num1} / ${num2} = ${division}`;
 };
 
+const checkInput = (array) => {
+  if (
+    array.length === 1 ||
+    Number.isNaN(+array[0]) ||
+    Number.isNaN(+array[1])
+  ) {
+    console.log("Introduce dos números");
+    process.exit(9);
+  }
+};
+
+checkInput(input);
+
 console.log(operation(+input[0], +input[1]));
