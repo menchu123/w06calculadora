@@ -12,3 +12,5 @@ const operation = (num1, num2) => {
   ${num1} * ${num2} = ${multiplication}
   ${num1} / ${num2} = ${division}`;
 };
+
+console.log(operation(+input[0], +input[1]));
